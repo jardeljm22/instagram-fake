@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 935px;
+    height: 700px;
+    justify-content: center;
+    margin: 90px ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+}
+.img {
+    margin: 0px 0px;
+    padding-left: 0px;
+}
+.img img{
+    padding: 0px;
+    margin: 0px;
+}
+.transition{
+    
+    position: relative;
+    margin-left: 162px;
+    margin-top: -610px;
+
+}
+.transition img{
+    position: absolute ;
+    opacity: 0;
+    animation-name: mudaFoto;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes mudaFoto {
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+.transition img:nth-child(1){
+    animation-delay: 0s;
+}
+.transition img:nth-child(2){
+    animation-delay: 5s;
+}
+.transition img:nth-child(3){
+    animation-delay: 10s;
+}
+
+
+.login {
+    width: 20rem;
+    height: 40rem;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px ;
+}
+.form{
+    margin-left: 0px;
+}
+.dados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px auto;
+    border: 1px solid rgb(210, 208, 208);
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+
+    padding: 20px;
+}
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.logo{
+    margin: 25px auto;
+}
+
+.email{
+    width: 265px;
+   margin : 7px  23px;
+    padding: 10px;
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 4px;
+    background-color: rgb(247, 247, 247);
+}
+.senha{
+    padding: 10px;
+    width: 268px;
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 4px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 0 0 0;
+ }
+ .entrar{
+    font-size: 15px;
+    color: aliceblue;
+    padding: 6px;
+    margin: 15px 0px;
+
+    width: 290px;
+    border: 1px solid rgb(176, 224, 237);
+    border-radius: 4px;
+    background-color: rgba(137, 215, 243, 0.91);
+    cursor: pointer;
+ }
+ .alt{
+
+    margin: 0 auto ;
+    font-size: 15px;
+    color: rgb(154, 158, 159);
+    text-align: center;
+ }
+ .redirect{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:20px;
+    padding: 0px;
+    cursor: pointer;
+    
+ }
+
+.pars{
+    
+    color: rgb(49, 49, 127);
+    max-width: 150px;
+    margin-left: 10px;
+    margin-top: 0px;
+    border: 0px solid rgba(178, 34, 34, 0.152);
+    size: 15px;
+}
+.pars:hover{
+    color: aqua;
+    transition:  0.5s;
+    -webkit-transition:  0.5s;
+    -moz-transition:  0.5s;
+    -ms-transition:  0.5s;
+    -o-transition:  0.5s;
+}
+.novaSenha{
+    margin: 0 auto;
+    margin-top: 10px;
+    cursor: pointer;
+    color: rgb(50, 50, 106);
+    font-size: 13px;
+}
+.cadastrar{
+    margin: 5px auto;
+    padding: 25px 0px;
+    border: 1px solid rgb(210,208, 208);
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+    width: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.cadastrar p{
+    font-family: sans-serif;
+    font-size : 13px;    
+ 
+}
+.cad{
+    margin-left: 10px;
+    color: rgb(89, 175, 228);
+    text-decoration: none;
+}
+.footer{
+    width: 100% ;
+    padding: 0px 0px;
+    margin: 0px  0px ;
+    margin-left: 20px;
+}
+.footer p{
+   font-family: sans-serif;
+   font-size : 14px; 
+   margin: 15px 0px; 
+}
+.footer  img{
+    width: 145px;
+    height: 42px;
+    margin: 10px auto;
+}
+.botoes{
+    display: flex;
+justify-content: space-around;
+}
+
+@media (max-width : 900px) {
+    .img{
+        display: none;
+    }
+}
+
+
