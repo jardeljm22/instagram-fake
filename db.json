@@ -6,24 +6,28 @@
     ,
     "amigos":[
         {
-            "name" : "paulo_pedro",
-            "photo-perfil":"https://br.pinterest.com/biapnhr/menino-ney/",
-            "postagem": "https://br.pinterest.com/pin/1108167052031279515/"
-    },
+            "name" : "fake_1",
+            "id" : 0,
+            "photo_perfil":"https://st2.depositphotos.com/6544740/9337/i/600/depositphotos_93376372-stock-photo-sunset-over-sea-pier.jpg",
+            "postagem": "https://st.depositphotos.com/1006065/2004/i/600/depositphotos_20041987-stock-photo-sunset-beach-this-photo-made.jpg"
+        },
         {
-            "name" : "ney-junior",
-            "photo-perfil":"https://m.facebook.com/4151200298252994",
-            "postagem": "https://www.pinterest.com/pin/601019512753530030/"
-    },
+            "name" : "fake_2",
+            "id" : 1,
+            "photo_perfil" :"https://cdn.pixabay.com/photo/2018/07/31/22/08/lion-3576045__480.jpg",
+            "postagem" : "https://www.viajali.com.br/wp-content/uploads/2016/07/monte-daisen-japao-730x486.jpg"
+        },
         {
-            "name" : "messi",
-            "photo-perfil":"https://www.gettyimages.com.br/fotos/ney-matogrosso",
-            "postagem": "https://www.metropoles.com/celebridades/ney-matogrosso-sobre-cazuza-pedia-pra-eu-tomar-azt-com-ele"
-    },
+            "name" : "fake_3",
+            "id" : 2,
+            "photo_perfil" :"https://i.pinimg.com/564x/ed/e6/3e/ede63e80f23ebb0fa805543aadd0ab8e.jpg",
+            "postagem" : "https://www.torredevigilancia.com/wp-content/uploads/2019/10/coringa-55.jpg"
+        },
         {
-            "name" : "luvade-prd",
-            "photo-perfil": "https://www.uol.com.br/universa/colunas/brenda-fucuta/2022/08/01/aos-81-ney-matogrosso-e-dono-do-rebolado-mais-subversivo-do-pais.htm",
-            "postagem": "https://www.pstu.org.br/suave-coisa-nenhuma-80-anos-de-ney-matogrosso/"
+            "name" : "fake_4",
+            "id" : 3,
+            "photo_perfil": "https://s1.static.brasilescola.uol.com.br/be/conteudo/images/imagem-em-lente-convexa.jpg",
+            "postagem" : "https://st.depositphotos.com/1017908/1548/i/450/depositphotos_15489579-stock-photo-amazing-mountain-with-red-leaf.jpg"
         }
     
     ]

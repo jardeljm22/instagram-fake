@@ -1,52 +1,29 @@
 
-//import { useId,useState} from 'react';
+//import { useEffect, useId,useState} from 'react';
+import { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom';
-//import imgTeste from'../../../Images/imagrnd.jpg';
-import Stories from './Stories';
+import Api from '../../Api';
 import "../../../Style/Article.css";
+import Stories from "../Section/Stories";
 
 //import api from '../../../services/api';
  
 
 const Article = () => {
 
-    //const [amigos,setAmigos] = useState([]);
+    const [amigos,setAmigos] = useState([]);
 
-    //useEffect(()=>{
-      //  api.get('/amigos').then((response)=>{
-      //      setAmigos(response.data);
-       // })
-    //});
-    ///console.log(amigos);
-    //console.log(amigos.length);
+    useEffect(()=>{
+        Api.get("/amigos").then((response)=>{
+            setAmigos(response.data);
+            console.log(response.data);
+        })
 
-    const amigos = [
-        {
-            name : "fake_1",
-            id : 0,
-            photo_perfil:"https://st2.depositphotos.com/6544740/9337/i/600/depositphotos_93376372-stock-photo-sunset-over-sea-pier.jpg",
-            postagem: "https://st.depositphotos.com/1006065/2004/i/600/depositphotos_20041987-stock-photo-sunset-beach-this-photo-made.jpg"
-        },
-        {
-            name : "fake_2",
-            id : 1,
-            photo_perfil:"https://cdn.pixabay.com/photo/2018/07/31/22/08/lion-3576045__480.jpg",
-            postagem: "https://www.viajali.com.br/wp-content/uploads/2016/07/monte-daisen-japao-730x486.jpg"
-        },
-        {
-            name : "fake_3",
-            id : 2,
-            photo_perfil:"https://i.pinimg.com/564x/ed/e6/3e/ede63e80f23ebb0fa805543aadd0ab8e.jpg",
-            postagem: "https://www.torredevigilancia.com/wp-content/uploads/2019/10/coringa-55.jpg"
-        },
-        {
-            name : "fake_4",
-            id : 3,
-            photo_perfil: "https://s1.static.brasilescola.uol.com.br/be/conteudo/images/imagem-em-lente-convexa.jpg",
-            postagem: "https://st.depositphotos.com/1017908/1548/i/450/depositphotos_15489579-stock-photo-amazing-mountain-with-red-leaf.jpg"
-        }
+    },[]);
+
+
+   
     
-    ]
     
 
     return(
@@ -79,8 +56,9 @@ const Article = () => {
                                 </div>
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" viewBox="0 0 24 24"><path d="M16 2v17.582l-4-3.512-4 3.512v-17.582h8zm2-2h-12v24l6-5.269 6 5.269v-24z"/></svg>
-                                </div>
+                                </div>                                
                             </div>
+
                         </div>
                     </div>
 

@@ -5,13 +5,13 @@ import  Home from './components/home/Home';
 import {BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 
 const App = () => {
-
+// />
     return (
     
         <Router>
             <Routes>
-                <Route path='/' element={<Home/>} />
-                <Route path='/Login' element={<TelaLogin/>} />
+                <Route path='/' element={<TelaLogin/>} />
+                <Route path='/home' element={<Home/>}/>
             </Routes>
         </Router>
     )

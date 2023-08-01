@@ -9,13 +9,15 @@ import img2 from '../../Images/img2.png';
 import img3 from '../../Images/img3.png';
 import {useForm} from 'react-hook-form';
 import "../../Style/Login.css";
+import { useNavigate } from 'react-router-dom';
 
 
 const TelaLogin = () =>  {
-
+    const navigate = useNavigate();
     const {register,handleSubmit,formState:{errors}} =  useForm();
 
     const logar = (data)=> {
+        navigate("/home");
         console.log(data);
 
     }
